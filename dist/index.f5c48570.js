@@ -2959,23 +2959,25 @@ var _kid = require("./components/Kid");
 var _kidDefault = parcelHelpers.interopDefault(_kid);
 var _men = require("./components/Men");
 var _menDefault = parcelHelpers.interopDefault(_men);
+var _productDetail = require("./components/ProductDetail");
+var _productDetailDefault = parcelHelpers.interopDefault(_productDetail);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
                 fileName: "src/script.js",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/script.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 1
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/script.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 1
     }, undefined);
 };
@@ -2985,7 +2987,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
             fileName: "src/script.js",
-            lineNumber: 21,
+            lineNumber: 22,
             columnNumber: 12
         }, undefined),
         children: [
@@ -2993,7 +2995,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productcard.ProductCard), {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 25,
+                    lineNumber: 26,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3001,7 +3003,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Kid",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _kidDefault.default), {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 29,
+                    lineNumber: 30,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3009,14 +3011,22 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/Men",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _menDefault.default), {}, void 0, false, {
                     fileName: "src/script.js",
-                    lineNumber: 33,
+                    lineNumber: 34,
+                    columnNumber: 15
+                }, undefined)
+            },
+            {
+                path: "/Product/:productId",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productDetailDefault.default), {}, void 0, false, {
+                    fileName: "src/script.js",
+                    lineNumber: 38,
                     columnNumber: 15
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Error, {}, void 0, false, {
             fileName: "src/script.js",
-            lineNumber: 36,
+            lineNumber: 41,
             columnNumber: 16
         }, undefined)
     }
@@ -3026,7 +3036,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/script.js",
-    lineNumber: 44,
+    lineNumber: 49,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3037,7 +3047,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Navbar":"5EEXV","./components/Productcard":"NvJkH","react-router-dom":"9xmpe","./components/Kid":"kIrek","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Men":"eGAAZ"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Navbar":"5EEXV","./components/Productcard":"NvJkH","react-router-dom":"9xmpe","./components/Kid":"kIrek","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Men":"eGAAZ","./components/ProductDetail":"9C7q8"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -26153,6 +26163,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _product = require("./Product");
 var _skeleton = require("./Skeleton");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const ProductCard = ()=>{
     _s();
@@ -26174,7 +26185,7 @@ const ProductCard = ()=>{
     //  }
     return listOfProduct.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeleton.Skeleton), {}, void 0, false, {
         fileName: "src/components/Productcard.js",
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 39
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -26191,7 +26202,7 @@ const ProductCard = ()=>{
                         value: SearchText
                     }, void 0, false, {
                         fileName: "src/components/Productcard.js",
-                        lineNumber: 31,
+                        lineNumber: 32,
                         columnNumber: 10
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26204,13 +26215,13 @@ const ProductCard = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Productcard.js",
-                        lineNumber: 35,
+                        lineNumber: 36,
                         columnNumber: 10
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Productcard.js",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 8
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26224,29 +26235,36 @@ const ProductCard = ()=>{
                 children: "Top Rated Product"
             }, void 0, false, {
                 fileName: "src/components/Productcard.js",
-                lineNumber: 44,
+                lineNumber: 45,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "product-card",
                 children: filterproduct.map((product)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _product.Product), {
-                        product: product
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: `/Product/${product.id}`,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _product.Product), {
+                            product: product
+                        }, void 0, false, {
+                            fileName: "src/components/Productcard.js",
+                            lineNumber: 56,
+                            columnNumber: 66
+                        }, undefined)
                     }, product.id, false, {
                         fileName: "src/components/Productcard.js",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Productcard.js",
-                lineNumber: 52,
+                lineNumber: 53,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Productcard.js",
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 4
     }, undefined);
 } //react provide functionality and it will be access by HOOKS --> useState, useEffect, useContext, useReducer
@@ -26264,7 +26282,7 @@ $RefreshReg$(_c, "ProductCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Product":"8VNuK","./Skeleton":"bNfWS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8VNuK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Product":"8VNuK","./Skeleton":"bNfWS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"8VNuK":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5065 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -26519,6 +26537,108 @@ $RefreshReg$(_c, "Men");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["aQL8O","lC3Ec","8ZNvh"], "8ZNvh", "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9C7q8":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$41fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$41fc.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _skeleton = require("./Skeleton");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const productDetail = ()=>{
+    _s();
+    const [singleproduct, setSingleProduct] = (0, _react.useState)(null);
+    const { productId } = (0, _reactRouterDom.useParams)();
+    (0, _react.useEffect)(()=>{
+        fetchData();
+        console.log(singleproduct);
+    });
+    const fetchData = async ()=>{
+        const data = await fetch(`https://fakestoreapi.com/products/${productId}`);
+        const result = await data.json();
+        setSingleProduct(result);
+    };
+    return singleproduct === null ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeleton.Skeleton), {}, void 0, false, {
+        fileName: "src/components/ProductDetail.js",
+        lineNumber: 20,
+        columnNumber: 33
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "product",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "product",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "product-image",
+                    src: singleproduct.image
+                }, void 0, false, {
+                    fileName: "src/components/ProductDetail.js",
+                    lineNumber: 23,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: singleproduct.title
+                }, void 0, false, {
+                    fileName: "src/components/ProductDetail.js",
+                    lineNumber: 24,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: [
+                        singleproduct.rating.rate,
+                        " ratings"
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ProductDetail.js",
+                    lineNumber: 25,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: [
+                        "Price: ",
+                        singleproduct.price
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/ProductDetail.js",
+                    lineNumber: 26,
+                    columnNumber: 7
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: singleproduct.description
+                }, void 0, false, {
+                    fileName: "src/components/ProductDetail.js",
+                    lineNumber: 27,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/ProductDetail.js",
+            lineNumber: 22,
+            columnNumber: 8
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/ProductDetail.js",
+        lineNumber: 21,
+        columnNumber: 5
+    }, undefined);
+};
+_s(productDetail, "eU0IiARt8Kc8cE8emhoR4wFrbKo=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+exports.default = productDetail;
+
+  $parcel$ReactRefreshHelpers$41fc.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Skeleton":"bNfWS","react-router-dom":"9xmpe"}]},["aQL8O","lC3Ec","8ZNvh"], "8ZNvh", "parcelRequire94c2")
 
 //# sourceMappingURL=index.f5c48570.js.map

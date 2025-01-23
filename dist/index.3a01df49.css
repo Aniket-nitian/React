@@ -15,6 +15,7 @@
 
 .product-card {
   flex-wrap: wrap;
+  align-items: center;
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -23,15 +24,23 @@
 .product {
   text-align: center;
   border: 1px solid #000;
-  max-width: 20%;
-  max-height: 20%;
+  flex-wrap: wrap;
   margin: 5px;
   padding: 5px;
+  display: flex;
   overflow: hidden;
 }
 
 .product-image {
-  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  display: flex;
+}
+
+.product-name, .product-price {
+  margin: 10px;
+  font-weight: bold;
 }
 
 .skeleton-container {
