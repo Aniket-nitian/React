@@ -31,7 +31,7 @@
 76C:\Users\user\coders\New folder\node_modules\@parcel\watcher\src\Debounce.cc133820892348950960 0
 120C:\Users\user\coders\New folder\node_modules\@parcel\package-manager\test\fixtures\has-foo\node_modules\foo\package.json133820892357326103 0
 81C:\Users\user\coders\New folder\node_modules\@parcel\config-default\test\.babelrc133820892341586277 0
-36C:\Users\user\coders\New folder\dist133820930060535133 1
+36C:\Users\user\coders\New folder\dist133821215928793729 1
 81C:\Users\user\coders\New folder\node_modules\@parcel\workers\lib\web\WebWorker.js133820892358497945 0
 57C:\Users\user\coders\New folder\node_modules\is-json\test133820892348845147 1
 64C:\Users\user\coders\New folder\node_modules\weak-lru-cache\dist133820892340723910 1
@@ -96,7 +96,7 @@
 76C:\Users\user\coders\New folder\node_modules\caniuse-lite\data\regions\TG.js133820892384323756 0
 60C:\Users\user\coders\New folder\node_modules\chalk\readme.md133820892348372422 0
 76C:\Users\user\coders\New folder\node_modules\react-router-dom\dist\server.js133820911522403014 0
-45C:\Users\user\coders\New folder\src\script.js133820928090075944 0
+45C:\Users\user\coders\New folder\src\script.js133821215924680128 0
 108C:\Users\user\coders\New folder\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-node\package.json133820892355077718 0
 100C:\Users\user\coders\New folder\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\sample-mdb.txt133820892365024823 0
 95C:\Users\user\coders\New folder\node_modules\caniuse-lite\data\features\prefers-color-scheme.js133820892381369058 0
@@ -118,13 +118,13 @@
 55C:\Users\user\coders\New folder\node_modules\color-name133820892345748103 1
 80C:\Users\user\coders\New folder\node_modules\msgpackr\dist\index-no-eval.cjs.map133820892356901779 0
 90C:\Users\user\coders\New folder\node_modules\@parcel\reporter-cli\test\CLIReporter.test.js133820892351327719 0
-53C:\Users\user\coders\New folder\src\components\Men.js133820929010195381 0
+53C:\Users\user\coders\New folder\src\components\Men.js133821214779151436 0
 64C:\Users\user\coders\New folder\node_modules\regenerator-runtime133820892347024107 1
 63C:\Users\user\coders\New folder\node_modules\globals\index.d.ts133820892348642801 0
 68C:\Users\user\coders\New folder\node_modules\react-router\LICENSE.md133820911522723994 0
 94C:\Users\user\coders\New folder\node_modules\caniuse-lite\data\features\css-in-out-of-range.js133820892365825865 0
 76C:\Users\user\coders\New folder\node_modules\@swc\helpers\esm\_instanceof.js133820892364324888 0
-56C:\Users\user\coders\New folder\src\components\Navbar.js133820930056695254 0
+56C:\Users\user\coders\New folder\src\components\Navbar.js133821214856486153 0
 61C:\Users\user\coders\New folder\node_modules\lmdb\SECURITY.md133820892364644712 0
 57C:\Users\user\coders\New folder\src\components\Product.js133820885020603909 0
 76C:\Users\user\coders\New folder\node_modules\caniuse-lite\data\regions\ST.js133820892383442858 0
@@ -1158,7 +1158,7 @@
 72C:\Users\user\coders\New folder\node_modules\@swc\helpers\_\_export_star133820892370146466 1
 77C:\Users\user\coders\New folder\node_modules\react-router-dom\dist\server.mjs133820911522836122 0
 73C:\Users\user\coders\New folder\node_modules\@parcel\workers\src\child.js133820892349451384 0
-55C:\Users\user\coders\New folder\dist\index.3a01df49.css133820927733786855 0
+55C:\Users\user\coders\New folder\dist\index.3a01df49.css133821215927473751 0
 79C:\Users\user\coders\New folder\node_modules\@parcel\core\lib\serializerCore.js133820892364486498 0
 76C:\Users\user\coders\New folder\node_modules\caniuse-lite\data\regions\SE.js133820892382596617 0
 96C:\Users\user\coders\New folder\node_modules\@swc\helpers\cjs\_class_private_field_loose_key.cjs133820892356306445 0
@@ -4377,7 +4377,7 @@
 60C:\Users\user\coders\New folder\node_modules\.bin\parcel.ps1133820892393341154 0
 56C:\Users\user\coders\New folder\node_modules\.bin\semver133820892393341154 0
 60C:\Users\user\coders\New folder\node_modules\.bin\semver.ps1133820892393341154 0
-59C:\Users\user\coders\New folder\dist\index.3a01df49.css.map133820927736876273 0
-54C:\Users\user\coders\New folder\dist\index.f5c48570.js133820930060204794 0
-58C:\Users\user\coders\New folder\dist\index.f5c48570.js.map133820930060460696 0
-47C:\Users\user\coders\New folder\dist\index.html133820927733786855 0
+59C:\Users\user\coders\New folder\dist\index.3a01df49.css.map133821215927584466 0
+54C:\Users\user\coders\New folder\dist\index.f5c48570.js133821215928605712 0
+58C:\Users\user\coders\New folder\dist\index.f5c48570.js.map133821215928770135 0
+47C:\Users\user\coders\New folder\dist\index.html133821215927419521 0

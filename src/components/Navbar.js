@@ -10,7 +10,7 @@ const Navbar = ()=>{
   return <div className='navbar'>
     <h1>AJIO</h1>
     <ul className='menu-items'>
-      <li><Link to="/men">Men</Link></li>
+      <li><Link to="/Men">Men</Link></li>
       <li><Link to="/Women">Women</Link></li>
       <li><Link to="/Kid">Kids</Link></li>
       <li>card</li>
@@ -23,4 +23,4 @@ const Navbar = ()=>{
 
 
 //default export
-export default Navbar
+export default Navbar;

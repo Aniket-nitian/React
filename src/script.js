@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import { ProductCard } from './components/Productcard';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Kid from './components/Kid';
-import Error from './components/Error';
+import Men from './components/Men';
 
 const App = ()=>{
   return (
@@ -30,7 +30,7 @@ const appRouter = createBrowserRouter([{
     },
     {
       path:"/Men",
-      element:"<Men/>"
+      element:<Men/>
     }
   ],
   errorElement:<Error/>,
