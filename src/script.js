@@ -1,19 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from './components/Navbar';
-import ProductCard from './components/Productcard';
-//NavBar
-//Logo
-//Menu Items
+import { ProductCard } from './components/Productcard';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import Kid from './components/Kid';
+import Error from './components/Error';
 
 const App = ()=>{
   return (
 <div>
 <Navbar/>
-<ProductCard/>
+<Outlet/>
 </div>
   )
 }
 
+
+const appRouter = createBrowserRouter([{
+  path: "/",
+  element: <App/>,
+  children:[
+    {
+      path:"/",
+      element:<ProductCard/>
+    },
+    {
+      path:"/Kid",
+      element:<Kid/>
+    },
+    {
+      path:"/Men",
+      element:"<Men/>"
+    }
+  ],
+  errorElement:<Error/>,
+},
+
+])
+
+
+
 const root = ReactDOM.createRoot(document.querySelector("#root"));
-root.render(<App/>);
+root.render(<RouterProvider router={appRouter}/>);

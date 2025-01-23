@@ -3,7 +3,7 @@ import { Product } from "./Product";
 import { Skeleton } from "./Skeleton";
 
 
-const ProductCard = ()=>{
+export const ProductCard = ()=>{
         const [listOfProduct,setlistOfProduct]= useState([]);
         const [filterproduct, setfilterproduct] = useState([]);
         const [SearchText,setSearchText] = useState("");
@@ -61,7 +61,6 @@ const ProductCard = ()=>{
   )
 }
 
-export default ProductCard;
 
 
 
